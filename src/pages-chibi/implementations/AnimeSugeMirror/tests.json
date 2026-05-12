@@ -1,0 +1,15 @@
+{
+  "title": "AnimeSuge Mirror",
+  "url": "https://animesuges.ru/",
+  "testCases": [
+    {
+      "url": "https://animesuges.ru/watch/one-piece-episode-1",
+      "expected": {
+        "sync": true,
+        "title": "One Piece",
+        "episode": 1,
+        "uiSelector": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "search": "https://kaa.lt/search?q={searchterm}",
+  "urls": {
+    "match": [
+      "*://*.kaa.lt/*",
+      "*://*.kaa.si/*",
+      "*://*.kaa.to/*",
+      "*://*.kaa.rs/*",
+      "*://*.kickassanime.cx/*"
+    ]
+  }
+}
