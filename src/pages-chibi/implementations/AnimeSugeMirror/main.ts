@@ -25,15 +25,18 @@ export const AnimeSugeMirror: PageInterface = {
       return $c.url().contains('/watch/').run();
     },
     getTitle($c) {
+      // Standard scraper logic
       return $c.querySelector('.item-bottom .name a').ifNotReturn().text().run();
     },
     getIdentifier($c) {
+      // Fix: Following Copilot's advice to use string() properly
       return $c.url().string().run();
     },
     getOverviewUrl($c) {
-      return $c.url().run();
+      return $c.url().string().run();
     },
     getEpisode($c) {
+      // Fix: Clean number grabbing without illegal regex
       return $c.querySelector('.duration .d-info span:first-child').ifNotReturn().text().number().run();
     },
     uiInjection($c) {
