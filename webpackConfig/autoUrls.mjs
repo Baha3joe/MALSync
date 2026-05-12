@@ -66,8 +66,8 @@ async function kickassanime() {
   addPageUrls('KickAssAnime', formattedUrls);
 }
 
-async function animekai() {
-  const response = await fetch('https://animekai.pw/');
+async function animesuge() {
+  const response = await fetch('https://animesuge.re/');
   const body = await response.text();
 
   const $ = cheerio.load(body);
@@ -80,7 +80,7 @@ async function animekai() {
   for (const url of urls) {
     formattedUrls.push('*://' + url.hostname + '/*');
   }
-  addChibiUrls('AnimeKAI', formattedUrls);
+  addChibiUrls('AnimeSuge', formattedUrls);
 }
 
 async function bato() {
@@ -306,7 +306,7 @@ async function start() {
     mixdrop,
     zoro,
     kickassanime,
-    animekai,
+    animesuge,
     bato,
     miruro,
     mangapark,

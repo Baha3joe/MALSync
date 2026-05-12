@@ -835,7 +835,7 @@ module.exports = {
   bun: {
     match: ['*://*.bunniescdn.online/*'],
   },
-  // animekai
+  // animesuge
   megaup: {
     match: [
       '*://megaup.cc/e/*',

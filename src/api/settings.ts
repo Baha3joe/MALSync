@@ -66,7 +66,7 @@ export const settingsObj = {
       'WeebCentral',
       'KickAssAnime',
       'animepahe',
-      'AnimeKAI',
+      'AnimeSuge',
     ],
     quicklinksPosition: 'default',
 

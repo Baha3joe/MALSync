@@ -14,7 +14,7 @@ import { AniXL } from './implementations/AniXL/main';
 import { bato } from './implementations/bato/main';
 import { Crunchyroll } from './implementations/Crunchyroll/main';
 import { animevost } from './implementations/animevost/main';
-import { AnimeKAI } from './implementations/AnimeKAI/main';
+import { AnimeSuge } from './implementations/AnimeSuge/main';
 import { FireAnime } from './implementations/FireAnime/main';
 import { WeebCentral } from './implementations/WeebCentral/main';
 import { MangaDemon } from './implementations/MangaDemon/main';
@@ -121,7 +121,7 @@ export const pages: { [key: string]: PageInterface } = {
   bato,
   Crunchyroll,
   animevost,
-  AnimeKAI,
+  AnimeSuge,
   FireAnime,
   WeebCentral,
   MangaDemon,

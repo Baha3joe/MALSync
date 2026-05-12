@@ -82,7 +82,7 @@ Makes it possible to use your MyAnimeList/Anilist/Kitsu/Simkl anime/mangalist as
                 <td><a href="https://comikey.com/"><img src="https://favicon.malsync.moe/?domain=https://comikey.com/"> Comikey</a></td>
                 <td></td>
               </tr><tr>
-                <td><a href="https://animekai.to"><img src="https://favicon.malsync.moe/?domain=https://animekai.to"> AnimeKAI</a></td>
+                <td><a href="https://animesuge.re"><img src="https://favicon.malsync.moe/?domain=https://animesuge.re"> AnimeSuge</a></td>
                 <td><a href="https://comix.to"><img src="https://favicon.malsync.moe/?domain=https://comix.to"> Comix</a></td>
                 <td></td>
               </tr><tr>
