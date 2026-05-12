@@ -37,11 +37,21 @@ export const AnimeSugeMirror: PageInterface = {
     getEpisode($c: ChibiGenerator<unknown>) {
       return $c.querySelector('.duration .d-info span').ifNotReturn().text().number().run();
     },
-    uiInjection($c) {
+    uiInjection($c: ChibiGenerator<unknown>) {
       return $c.querySelector('.player-controls').uiAfter().run();
     },
-    nextEpUrl($c) {
-      return $c.querySelector('.item-top a.poster[href*="/ep-"]').getAttribute('href').ifNotReturn().urlAbsolute().run();
+    nextEpUrl($c: ChibiGenerator<unknown>) {
+      return $c
+        .querySelector('.item-top a.poster[href*="/ep-"]')
+        .getAttribute('href')
+        .ifNotReturn()
+        .urlAbsolute()
+        
+        .querySelector('.item-top a.poster[href*="/ep-"]')
+        .getAttribute('href')
+        .ifNotReturn()
+        .urlAbsolute()
+        .run();
     },
   },
   lifecycle: {
