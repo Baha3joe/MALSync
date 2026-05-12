@@ -1,3 +1,4 @@
+import type { ChibiGenerator } from '../../../chibiScript/ChibiGenerator';
 import { PageInterface } from '../../pageInterface';
 
 export const AnimeSugeMirror: PageInterface = {
@@ -21,23 +22,20 @@ export const AnimeSugeMirror: PageInterface = {
   },
   search: 'https://animesuges.ru/search?keyword={searchtermPlus}',
   sync: {
-    isSyncPage($c) {
+    isSyncPage($c: ChibiGenerator<unknown>) {
       return $c.url().contains('/watch/').run();
     },
-    getTitle($c) {
-      // Standard scraper logic
+    getTitle($c: ChibiGenerator<unknown>) {
       return $c.querySelector('.item-bottom .name a').ifNotReturn().text().run();
     },
-    getIdentifier($c) {
-      // Fix: Following Copilot's advice to use string() properly
+    getIdentifier($c: ChibiGenerator<unknown>) {
       return $c.url().string().run();
     },
-    getOverviewUrl($c) {
+    getOverviewUrl($c: ChibiGenerator<unknown>) {
       return $c.url().string().run();
     },
-    getEpisode($c) {
-      // Fix: Clean number grabbing without illegal regex
-      return $c.querySelector('.duration .d-info span:first-child').ifNotReturn().text().number().run();
+    getEpisode($c: ChibiGenerator<unknown>) {
+      return $c.querySelector('.duration .d-info span').ifNotReturn().text().number().run();
     },
     uiInjection($c) {
       return $c.querySelector('.player-controls').uiAfter().run();
